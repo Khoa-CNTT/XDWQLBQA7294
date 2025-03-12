@@ -300,4 +300,9 @@ E:\Eshopp\Eshopp\obj\Debug\net8.0\refint\Eshopp.dll
 E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.pdb
 E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.genruntimeconfig.cache
 E:\Eshopp\Eshopp\obj\Debug\net8.0\ref\Eshopp.dll
+E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.sourcelink.json
 E:\Eshopp\Eshopp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Eshopp\Eshopp\bin\Debug\net8.0\PagedList.dll
+E:\Eshopp\Eshopp\bin\Debug\net8.0\X.PagedList.dll
+E:\Eshopp\Eshopp\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.MvcApplicationPartsAssemblyInfo.cs
