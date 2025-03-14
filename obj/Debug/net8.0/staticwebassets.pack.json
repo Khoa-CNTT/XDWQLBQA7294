@@ -13297,6 +13297,174 @@
       "PackagePath": "staticwebassets\\Content\\tinymce\\js\\tinymce\\tinymce.min.js"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.babelrc",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.babelrc"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.eslintignore",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.eslintignore"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.eslintrc.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.eslintrc.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.gitignore",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.gitignore"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.mailmap",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.mailmap"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.npmignore",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.npmignore"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.puppeteerrc.cjs",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.puppeteerrc.cjs"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.travis.yml",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\.travis.yml"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\AUTHORS",
+      "PackagePath": "staticwebassets\\autoNumeric-next"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\CHANGELOG.md"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\LICENSE",
+      "PackagePath": "staticwebassets\\autoNumeric-next"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\README.md",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\README.md"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\config\\webpack.config.base.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\config\\webpack.config.base.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\config\\webpack.config.dev.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\config\\webpack.config.dev.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\config\\webpack.config.prd.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\config\\webpack.config.prd.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\config\\webpack.config.test.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\config\\webpack.config.test.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\doc\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\doc\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\doc\\Documentation.md",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\doc\\Documentation.md"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\doc\\HowToUpgradeToV4.md",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\doc\\HowToUpgradeToV4.md"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\index.d.ts",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\index.d.ts"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\package.json",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\package.json"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumeric.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumeric.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericDefaultSettings.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericDefaultSettings.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericEnum.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericEnum.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericEvents.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericEvents.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericHelper.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericHelper.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericOptions.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericOptions.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\AutoNumericPredefinedOptions.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\AutoNumericPredefinedOptions.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\main.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\main.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\maths\\ASTNode.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\maths\\ASTNode.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\maths\\Evaluator.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\maths\\Evaluator.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\maths\\Lexer.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\maths\\Lexer.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\maths\\Parser.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\maths\\Parser.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\src\\maths\\Token.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\src\\maths\\Token.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\e2e\\index.html",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\e2e\\index.html"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\e2e\\specs\\autoNumeric.e2e.spec.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\e2e\\specs\\autoNumeric.e2e.spec.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\e2e\\wdio.local.conf.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\e2e\\wdio.local.conf.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\unit\\autoNumeric.spec.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\unit\\autoNumeric.spec.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\unit\\karma.conf.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\unit\\karma.conf.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\test\\unit\\tests.webpack.js",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\test\\unit\\tests.webpack.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\tools\\authors.sh",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\tools\\authors.sh"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\yarn.lock",
+      "PackagePath": "staticwebassets\\autoNumeric-next\\yarn.lock"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

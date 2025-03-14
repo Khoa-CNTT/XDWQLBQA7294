@@ -52,7 +52,7 @@
             
             <div class="row">
                 <div class=" col-md-12">
-                @using (Html.BeginForm("Add", "Posts", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                @using (Html.BeginForm("Add", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
                 {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary(false)
@@ -94,7 +94,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Chi tiết sản phẩm</label>
-                                            @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @placeholder = "Chi tiết sản phẩm" })
+                                            @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @placeholder = "Chi tiết sản phẩm",@id= "txtDetail" })
                                             @Html.ValidationMessageFor(x => x.Description, null, new { @class = "text-danger" })
                                         </div>
                                         <div class="row">
@@ -107,10 +107,11 @@
                                             </div>
                                             <div class=" col-4">
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">Giá</label>
-                                                    @Html.TextBoxFor(x => x.Price, new { @class = "form-control", @placeholder = "Giá" })
+                                                    <label for="Price">Giá</label>
+                                                    @Html.TextBoxFor(x => x.Price, new { @class = "form-control autonumeric", @placeholder = "Giá" })
                                                     @Html.ValidationMessageFor(x => x.Price, null, new { @class = "text-danger" })
                                                 </div>
+
                                             </div>
                                             <div class=" col-4">
                                                 <div class="form-group">
@@ -143,7 +144,7 @@
                                                  <div class="form-group">
                                                     <div class="custom-control custom-checkbox">
                                                         @Html.CheckBoxFor(x => x.IsFeature, new { @class = "custom-control-input", @id = "IsFeatureCheckbox" })
-                                                        <label for="IsFeatureCheckbox" class="custom-control-label">Hiển thị</label>
+                                                        <label for="IsFeatureCheckbox" class="custom-control-label">Nổi bật</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -160,101 +161,39 @@
                                 </div>
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="timeline">
-                                    <!-- The timeline -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Ảnh đại diện</label>
+                                                    <input type="file" id="imageUpload" class="form-control-file" multiple />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <table class="table table-hover" id="tbHtml1">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th class="text-center">Ảnh</th>
+                                                            <th class="text-center">Ảnh Đại diện</th>
+                                                            <th class="text-center">Thao tác</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
                                     <div class="timeline timeline-inverse">
-                                        <!-- timeline time label -->
-                                        <div class="time-label">
-                                            <span class="bg-danger">
-                                                10 Feb. 2014
-                                            </span>
-                                        </div>
-                                        <!-- /.timeline-label -->
-                                        <!-- timeline item -->
+                                      
+                                      
+                                      
                                         <div>
-                                            <i class="fas fa-envelope bg-primary"></i>
-
-                                            <div class="timeline-item">
-                                                <span class="time"><i class="far fa-clock"></i> 12:05</span>
-
-                                                <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-
-                                                <div class="timeline-body">
-                                                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-                                                    weebly ning heekya handango imeem plugg dopplr jibjab, movity
-                                                    jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-                                                    quora plaxo ideeli hulu weebly balihoo...
-                                                </div>
-                                                <div class="timeline-footer">
-                                                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END timeline item -->
-                                        <!-- timeline item -->
-                                        <div>
-                                            <i class="fas fa-user bg-info"></i>
-
-                                            <div class="timeline-item">
-                                                <span class="time"><i class="far fa-clock"></i> 5 mins ago</span>
-
-                                                <h3 class="timeline-header border-0">
-                                                    <a href="#">Sarah Young</a> accepted your friend request
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <!-- END timeline item -->
-                                        <!-- timeline item -->
-                                        <div>
-                                            <i class="fas fa-comments bg-warning"></i>
-
-                                            <div class="timeline-item">
-                                                <span class="time"><i class="far fa-clock"></i> 27 mins ago</span>
-
-                                                <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
-
-                                                <div class="timeline-body">
-                                                    Take me to your leader!
-                                                    Switzerland is small and neutral!
-                                                    We are more like Germany, ambitious and misunderstood!
-                                                </div>
-                                                <div class="timeline-footer">
-                                                    <a href="#" class="btn btn-warning btn-flat btn-sm">View comment</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END timeline item -->
-                                        <!-- timeline time label -->
-                                        <div class="time-label">
-                                            <span class="bg-success">
-                                                3 Jan. 2014
-                                            </span>
-                                        </div>
-                                        <!-- /.timeline-label -->
-                                        <!-- timeline item -->
-                                        <div>
-                                            <i class="fas fa-camera bg-purple"></i>
-
-                                            <div class="timeline-item">
-                                                <span class="time"><i class="far fa-clock"></i> 2 days ago</span>
-
-                                                <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
-
-                                                <div class="timeline-body">
-                                                    <img src="https://placehold.it/150x100" alt="...">
-                                                    <img src="https://placehold.it/150x100" alt="...">
-                                                    <img src="https://placehold.it/150x100" alt="...">
-                                                    <img src="https://placehold.it/150x100" alt="...">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END timeline item -->
-                                        <div>
-                                            <i class="far fa-clock bg-gray"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.tab-pane -->
 
                                 <div class="tab-pane" id="settings">
                                     <form class="form-horizontal">
@@ -301,6 +240,7 @@
 @section scripts {
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
     <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.6.0/dist/autoNumeric.min.js"></script>
     <script>
         // Khởi tạo TinyMCE
         tinymce.init({
@@ -324,16 +264,52 @@
             }
         });
 
-                  function previewImage(event) {
-            var reader = new FileReader();
-            reader.onload = function(){
-                var output = document.getElementById('preview');
-                output.src = reader.result;
-                output.style.display = "block";
-            };
-            reader.readAsDataURL(event.target.files[0]);
-        }
+                       $(document).ready(function () {
+            let imageCount = 0;
 
+            // Khi chọn ảnh, tự động thêm vào bảng
+            $("#imageUpload").change(function (event) {
+                let files = event.target.files;
+
+                for (let i = 0; i < files.length; i++) {
+                    let reader = new FileReader();
+                    reader.onload = function (e) {
+                        imageCount++;
+                        let newRow = `
+                            <tr id="row_${imageCount}">
+                                <td class="text-center">${imageCount}</td>
+                                <td class="text-center"><img width="80" src="${e.target.result}" /></td>
+                                <td class="text-center"><input type="radio" name="rDefault" value="${imageCount}" /></td>
+                                <td class="text-center">
+                                    <button data-id="${imageCount}" class="btn btn-sm btn-danger delete-image">Xóa</button>
+                                </td>
+                            </tr>`;
+                        $("#tbHtml1 tbody").append(newRow);
+                    };
+                    reader.readAsDataURL(files[i]);
+                }
+
+                // Reset input file để có thể chọn ảnh mới cùng tên
+                $(this).val("");
+            });
+
+            // Xử lý xóa ảnh
+            $(document).on("click", ".delete-image", function () {
+                if (confirm("Bạn có muốn xóa ảnh này không?")) {
+                    $(this).closest("tr").remove();
+                }
+            });
+        });
+                document.addEventListener('DOMContentLoaded', function () {
+            // Khởi tạo autoNumeric cho các phần tử có class 'autonumeric'
+            new AutoNumeric('.autonumeric', {
+                digitGroupSeparator: '.', // Dấu phân cách hàng nghìn
+                decimalPlaces: 0,        // Không có số thập phân
+                currencySymbol: 'đ',     // Ký hiệu tiền tệ
+                currencySymbolPlacement: 's', // Đặt ký hiệu tiền tệ ở phía sau
+                unformatOnSubmit: true   // Tự động bỏ định dạng khi submit form
+            });
+        });
     </script>
 }
 

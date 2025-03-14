@@ -16,10 +16,16 @@
           "Microsoft.EntityFrameworkCore.Tools": "9.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
           "PagedList": "1.17.0",
-          "X.PagedList.Mvc.Core": "10.5.7"
+          "X.PagedList.Mvc.Core": "10.5.7",
+          "autoNumeric": "1.9.45"
         },
         "runtime": {
           "Eshopp.dll": {}
+        }
+      },
+      "autoNumeric/1.9.45": {
+        "dependencies": {
+          "jQuery": "1.9.0"
         }
       },
       "Azure.Core/1.38.0": {
@@ -616,6 +622,7 @@
           }
         }
       },
+      "jQuery/1.9.0": {},
       "Microsoft.AspNet.Mvc/5.3.0": {
         "dependencies": {
           "Microsoft.AspNet.Razor": "3.3.0",
@@ -2232,6 +2239,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "autoNumeric/1.9.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eUZEQvaqZxbWWi2OSn5KMBanLTJxwL8aZnYLY0zXMplv7fS1pdZGCmtxObrtRLWVaBVlSDoR7Gg3S08YK4WJSQ==",
+      "path": "autonumeric/1.9.45",
+      "hashPath": "autonumeric.1.9.45.nupkg.sha512"
+    },
     "Azure.Core/1.38.0": {
       "type": "package",
       "serviceable": true,
@@ -2602,6 +2616,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "jQuery/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bS6OGSd/QL39vKKhATpeehgZDCzV6foRJ52EocEGAB29VetwXkQHN6KQIBlBbW9VJzuHr+rQxHYZ13MnPGQ/vw==",
+      "path": "jquery/1.9.0",
+      "hashPath": "jquery.1.9.0.nupkg.sha512"
     },
     "Microsoft.AspNet.Mvc/5.3.0": {
       "type": "package",
