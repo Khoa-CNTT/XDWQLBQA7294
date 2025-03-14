@@ -1,28 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Eshopp.Models.EF;
+﻿using Eshopp.Models.EF;
 using EShopp.Models.EF;
 using EShopp.Repository;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
 using X.PagedList.Extensions;
-using Microsoft.AspNetCore.Mvc.Rendering;
-
+using X.PagedList.Mvc.Core;
 namespace Eshopp.Areas.Admin.Controllers
 {
     [Area("Admin")]
 
-    public class ProductsController : Controller
+
+    public class ProductCategoryController : Controller
     {
         private readonly ApplicationDbContext _context;
 
         // Inject DbContext vào Controller
-        public ProductsController(ApplicationDbContext context)
+        public ProductCategoryController(ApplicationDbContext context)
         {
             _context = context;
         }
         public IActionResult Index(string Searchtext, int? page)
         {
             var pageSize = 10; // Số bài viết trên mỗi trang
-            IEnumerable<Product> items = _context.Products.OrderByDescending(x => x.id);
+            IEnumerable<ProductCategory> items = _context.ProductCategories.OrderByDescending(x => x.Id);
             if (!string.IsNullOrEmpty(Searchtext))
             {
                 items = items.Where(x => x.Alias.Contains(Searchtext) || x.Title.Contains(Searchtext)).ToList();
@@ -34,10 +34,26 @@ namespace Eshopp.Areas.Admin.Controllers
 
             return View(items);
         }
-        public ActionResult Add(int id)
+        [HttpGet]
+        public ActionResult Add()
         {
-            ViewBag.ProductCategory= new SelectList(_context.ProductCategories.ToList(),"Id","Title");
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Add(ProductCategory model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.CreatedDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
+                model.Alias = Eshopp.Models.Common.Filter.FilterChar(model.Title);
+                _context.ProductCategories.Add(model);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+
         }
     }
 }
