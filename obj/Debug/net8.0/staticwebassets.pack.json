@@ -13297,6 +13297,390 @@
       "PackagePath": "staticwebassets\\Content\\tinymce\\js\\tinymce\\tinymce.min.js"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\banner_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\banner_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner_2.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\banner_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner_3.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\blog_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\blog_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog_2.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\blog_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog_3.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\deal_ofthe_week.png",
+      "PackagePath": "staticwebassets\\assets\\images\\deal_ofthe_week.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\desc_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\desc_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\desc_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\desc_2.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\desc_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\desc_3.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\map_marker.png",
+      "PackagePath": "staticwebassets\\assets\\images\\map_marker.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_1.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_10.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_2.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_3.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_4.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_5.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_6.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_7.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_8.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\product_9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product_9.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_1_thumb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_1_thumb.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_2.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_2_thumb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_2_thumb.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_3.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\single_3_thumb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single_3_thumb.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\slider_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\categories_custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\categories_custom.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\contact_custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact_custom.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\single_custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\single_custom.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\Isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\Isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\animate.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\easing\\easing.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\assets\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\themify-icons\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\themify-icons\\fonts\\themify.eot"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\themify-icons\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\themify-icons\\fonts\\themify.svg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\plugins\\themify-icons\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\themify-icons\\themify-icons.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\bootstrap4\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\bootstrap4\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\bootstrap4\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\styles\\bootstrap4\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\bootstrap4\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\styles\\bootstrap4\\popper.js"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\categories_responsive.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\categories_responsive.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\categories_styles.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\categories_styles.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\contact_responsive.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\contact_responsive.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\contact_styles.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\contact_styles.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\main_styles.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\main_styles.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\responsive.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\single_responsive.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\single_responsive.css"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\styles\\single_styles.css",
+      "PackagePath": "staticwebassets\\assets\\styles\\single_styles.css"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\autoNumeric-next\\.babelrc",
       "PackagePath": "staticwebassets\\autoNumeric-next\\.babelrc"
     },
@@ -13481,8 +13865,24 @@
       "PackagePath": "staticwebassets\\images\\news\\062092a1-59fa-4d81-abed-a09ae332efa2.jpg"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\072d9181-a1a7-45cb-a899-e2d15ade41cf.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\072d9181-a1a7-45cb-a899-e2d15ade41cf.jpg"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\1b8f4b24-5ca7-4841-a33a-4173708cc660.jpg",
       "PackagePath": "staticwebassets\\images\\news\\1b8f4b24-5ca7-4841-a33a-4173708cc660.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\1cb9b5c8-7ce2-4357-bc3b-c14c4e54c5e7.webp",
+      "PackagePath": "staticwebassets\\images\\news\\1cb9b5c8-7ce2-4357-bc3b-c14c4e54c5e7.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\23c5cbff-7da8-4117-b2e3-2a41e18debcb.webp",
+      "PackagePath": "staticwebassets\\images\\news\\23c5cbff-7da8-4117-b2e3-2a41e18debcb.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\2b2c079f-2100-408b-b754-093fbc8fa0a7.webp",
+      "PackagePath": "staticwebassets\\images\\news\\2b2c079f-2100-408b-b754-093fbc8fa0a7.webp"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\31d09b1d-8609-408a-89ee-521c6cd1ce29.jpg",
@@ -13533,6 +13933,10 @@
       "PackagePath": "staticwebassets\\images\\news\\725dae63-e900-45a3-8ae6-45b88fd94995.jpg"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\7646d8e9-d720-418e-92a4-ccc24651796e.webp",
+      "PackagePath": "staticwebassets\\images\\news\\7646d8e9-d720-418e-92a4-ccc24651796e.webp"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\80067b4c-ee35-4a5e-999f-44f0bb7512ca.png",
       "PackagePath": "staticwebassets\\images\\news\\80067b4c-ee35-4a5e-999f-44f0bb7512ca.png"
     },
@@ -13581,6 +13985,10 @@
       "PackagePath": "staticwebassets\\images\\news\\b93205c0-01e8-4335-8371-6808a4fe1490.jpg"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\bc1f5ce6-ac6e-44a9-ac72-e473ebec4a41.webp",
+      "PackagePath": "staticwebassets\\images\\news\\bc1f5ce6-ac6e-44a9-ac72-e473ebec4a41.webp"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\c3a715a3-d535-4e82-9d7f-8d7ed613012f.png",
       "PackagePath": "staticwebassets\\images\\news\\c3a715a3-d535-4e82-9d7f-8d7ed613012f.png"
     },
@@ -13591,6 +13999,10 @@
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\c9e00160-4979-4fc0-93ff-5506f6fad808.jpg",
       "PackagePath": "staticwebassets\\images\\news\\c9e00160-4979-4fc0-93ff-5506f6fad808.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\caabd6aa-76a9-4639-998e-e71fcdb5bf5d.png",
+      "PackagePath": "staticwebassets\\images\\news\\caabd6aa-76a9-4639-998e-e71fcdb5bf5d.png"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\cd30d17f-1784-4491-a66d-1a076a1a86b7.jpg",
@@ -13609,12 +14021,60 @@
       "PackagePath": "staticwebassets\\images\\news\\e38180d3-8a8b-46d2-89a7-41abdb605628.jpg"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\e96246c5-bf89-411c-adcf-3f671b5b29a6.webp",
+      "PackagePath": "staticwebassets\\images\\news\\e96246c5-bf89-411c-adcf-3f671b5b29a6.webp"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\eb792de2-c19c-46ab-9e06-8598f297a958.png",
       "PackagePath": "staticwebassets\\images\\news\\eb792de2-c19c-46ab-9e06-8598f297a958.png"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\news\\fdb1902a-2422-42c6-8234-6a988dd7ae39.png",
       "PackagePath": "staticwebassets\\images\\news\\fdb1902a-2422-42c6-8234-6a988dd7ae39.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\08317daf-b4d4-4f9c-85bc-b144e8119d96.webp",
+      "PackagePath": "staticwebassets\\images\\products\\08317daf-b4d4-4f9c-85bc-b144e8119d96.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\3956752e-4233-4685-93d9-e307741160af.png",
+      "PackagePath": "staticwebassets\\images\\products\\3956752e-4233-4685-93d9-e307741160af.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\64e92fe1-ea66-4cb0-8012-96c103629eb2.png",
+      "PackagePath": "staticwebassets\\images\\products\\64e92fe1-ea66-4cb0-8012-96c103629eb2.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\7636b5f7-2940-49b3-b2b6-b0887a31b662.webp",
+      "PackagePath": "staticwebassets\\images\\products\\7636b5f7-2940-49b3-b2b6-b0887a31b662.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\7d8da27c-6aed-4ef5-8160-c80885488d2a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7d8da27c-6aed-4ef5-8160-c80885488d2a.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\Untitled.png",
+      "PackagePath": "staticwebassets\\images\\products\\Untitled.png"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\vn-11134207-7r98o-lwjivhd1edw99b.webp",
+      "PackagePath": "staticwebassets\\images\\products\\vn-11134207-7r98o-lwjivhd1edw99b.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\vn-11134207-7r98o-lwjivhdui9cr74.webp",
+      "PackagePath": "staticwebassets\\images\\products\\vn-11134207-7r98o-lwjivhdui9cr74.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\z4349676965084_bdc68ff474f49e46eccbab4cd57ff232.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\z4349676965084_bdc68ff474f49e46eccbab4cd57ff232.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\z5997939274784_4f9afe2e1a7a59b19625256aef74074d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\z5997939274784_4f9afe2e1a7a59b19625256aef74074d.jpg"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\js\\site.js",

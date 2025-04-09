@@ -72,7 +72,7 @@ namespace Eshopp.Areas.Admin.Controllers
                 }
 
                 model.CreatedDate = DateTime.Now;
-                model.CategoryId = 3;
+                model.CategoryId = 5;
                 model.ModifiedDate = DateTime.Now;
                 model.Alias = Eshopp.Models.Common.Filter.FilterChar(model.Title);
                 _context.Posts.Add(model);

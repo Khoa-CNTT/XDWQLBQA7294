@@ -1,0 +1,154 @@
+﻿@model IEnumerable<EShopp.Models.EF.ProductImage>
+@{
+	ViewBag.Title = "Ảnh sản phẩm";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutEmpty.cshtml";
+}
+<style>
+    .glImage {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Điều chỉnh khoảng cách giữa các ảnh */
+    }
+
+        .glImage li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid #ddd;
+            padding: 5px;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .glImage img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+    .box-btn {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 5px;
+    }
+</style>
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Ảnh sản phẩm</h3>
+
+            <div class="card-tools">
+                <button type="button" class="btn btn-danger"  title="Collapse">
+                    Xóa hết
+                </button>
+                <div class="form-group">
+                    <label for="imageUpload" class="btn btn-primary">Thêm ảnh</label>
+                    <input type="file" id="imageUpload" name="Images" class="form-control-file d-none" multiple />
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body">       
+            <ul class="glImage" id="imageList">
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <li id="trow_@item.id">
+                            <img src="@item.Image" width="200" />
+                            <div class="box-btn">
+                                <a href="#" data-id="@item.id" class="btn btn-sm btn-danger btnDelete"><i class="fa fa-trash"></i>
+                                </a>
+                                <a href="#" data-id="@item.id" class="btn btn-sm btn-success btnDefault"><i class="fa fa-check"></i>
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<script>
+      $(document).ready(function () {
+    $('#imageUpload').on('change', function () {
+        var formData = new FormData();
+        var files = $(this)[0].files;
+        var productId = @ViewBag.ProductId; // ID của sản phẩm
+
+        if (files.length > 0) {
+            for (var i = 0; i < files.length; i++) {
+                formData.append('Images', files[i]);
+            }
+            formData.append('productId', productId);
+
+            $.ajax({
+                url: '/Admin/ProductImage/UploadImages',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (rs) {
+                    if (rs.success) {
+                        rs.images.forEach(function (img) {
+                            $('#imageList').append(`
+                                <li id="trow_${img.id}">
+                                    <img src="${img.imageUrl}" width="200"/>
+                                    <div class="box-btn">
+                                        <a href="#" data-id="${img.id}" class="btn btn-sm btn-danger btnDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                        <a href="#" data-id="${img.id}" class="btn btn-sm btn-success btndefault">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            `);
+                        });
+                    } else {
+                        alert('Có lỗi khi tải ảnh lên.');
+                    }
+                }
+            });
+        }
+    });
+
+        // Xóa ảnh
+          $('body').on('click', '.btnDelete', function () {
+            var id = $(this).data('id');
+            var conf = confirm('Bạn có muốn xóa ảnh này không?');
+
+            if (conf) {
+                $.ajax({
+                    url: '/admin/productimage/delete',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (rs) {
+                        if (rs.success) {
+                            $('#trow_' + id).remove(); // Xóa ảnh khỏi giao diện
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>

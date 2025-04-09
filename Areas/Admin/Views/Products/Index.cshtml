@@ -20,12 +20,14 @@
         </li>
     </ul>
 }
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Quản lý Sản phẩm</h1>
+                <h1>Quản lý danh sản phẩm</h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -72,12 +74,15 @@
                         <th><input type="checkbox" id="SelectedAll" /></th>
                         <th>STT</th>
                         <th>Hình ảnh</th>
-                        <th>Tên Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
                         <th>Danh mục</th>
                         <th>Số lượng</th>
                         <th>Giá</th>
                         <th> Ngày tạo</th>
-                        <th></th>
+                     
+
+
+                        <th style=" width:150px;"></th>
 
                     </tr>
                 </thead>
@@ -90,21 +95,30 @@
                         foreach (var item in Model)
                         {
                             var strCheck = item.IsActive ? "<i class = 'fa fa-check text-success'></i> " : "<i class = 'fa fa-times text-danger'></i>";
+                            var strCheckHome = item.IsHome ? "<i class = 'fa fa-check text-success'></i> " : "<i class = 'fa fa-times text-danger'></i>";
+
                             <tr id="trow_@item.id">
                                 <td><input type="checkbox" class=" cbkItem" value="@item.id" /></td>
                                 <td>@i</td>
-                                <td><img src="@item.Image" width="50" /></td>
+                                <td>
+                                    <img src="@item.Image" class="img-product" data-id="@item.id" width="50" style="cursor:pointer;" />
+                                </td>
+
                                 <td>@item.Title</td>
-                                <td>@item.Category.Title</td>
+                                <td>@(item.ProductCategory?.Title ?? "Không có danh mục")</td>
                                 <td>@item.Quantiry</td>
                                 <td>@item.Price</td>
                                 <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
                                 <td class="text-center">
-                                    <a href="#" data-id="@item.id" class="btnActive">@Html.Raw(strCheck)</a>
+                                    <a href="#" data-id="@item.id" class="btnHome">@Html.Raw(strCheckHome)</a>
                                     <label class="m1-2">Hiển thị </label>
                                 </td>
+                                <td class="text-center">
+                                    <a href="#" data-id="@item.id" class="btnActive">@Html.Raw(strCheck)</a>
+                                    <label class="m1-2">Home </label>
+                                </td>
                                 <td>
-                                    <a href="/admin/Posts/edit/@item.id" class="btn btn-sm btn-primary">Sửa</a>
+                                    <a href="/admin/Products/edit/@item.id" class="btn btn-sm btn-primary">Sửa</a>
                                     <a href="#" data-id="@item.id" class=" btn btn-sm btn-danger btnDelete">Xóa</a>
 
                                 </td>
@@ -127,10 +141,17 @@
         <div class="card-footer">
         </div>
     </div>
-
+    <div id="dialog" title="Quản lý ảnh sản phẩm" style="display:none;">
+        <iframe id="imageDialogIframe" src="" width="100%" height="500px" style="border:none;"></iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 
 </section>
 @section scripts {
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
     <script>
         $(document).ready(function (){
 
@@ -160,7 +181,7 @@
                 var conf =confirm('Bạn có muốn xóa bản ghi này không?')
                 if(conf === true){
                     $.ajax({
-                        url:'/admin/posts/deleteAll',
+                        url:'/admin/products/deleteAll',
                         type :'POST',
                         data :{ids:str},
                         success :function(rs){
@@ -191,7 +212,7 @@
                  var conf =confirm('Bạn có muốn xóa bản ghi này không?');
                  if(conf == true){
                      $.ajax({
-                         url:'/admin/posts/delete',
+                         url:'/admin/products/delete',
                          type: 'POST',
                          data:{id:id},
                          success:function(rs){
@@ -210,7 +231,7 @@
                 var id = btn.data("id");
 
                 $.ajax({
-                    url: '/admin/posts/IsActive',
+                    url: '/admin/products/IsActive',
                     type: 'POST',
                     data: { id: id },
                     success: function (rs) {
@@ -225,8 +246,51 @@
                 });
             });
         });
+            $('body').on('click', '.btnHome', function (e) {
+                e.preventDefault();
+                var btn = $(this);
+                var id = btn.data("id");
 
+                $.ajax({
+                    url: '/admin/products/IsHome',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (rs) {
+                        if (rs.success) {
+                            if (rs.isHome) {
+                                btn.html("<i class='fa fa-check text-success'></i>");
+                            } else {
+                                btn.html("<i class='fas fa-times text-danger'></i>");
+                            }
+                        }
+                    }
+                });
+            });
+              $(document).ready(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                width: 800,
+                height: 600,
+                close: function () {
+                    $("#imageDialogIframe").attr("src", ""); // Xóa src khi đóng
+                }
+            });
 
+            $("body").on("click", ".img-product", function () {
+                var productId = $(this).data("id");
+                console.log("Product ID:", productId); // Debug xem ID có lấy đúng không
 
+                if (productId) {
+                    var url = "/admin/ProductImage/Index?productId=" + productId;
+                    console.log("Opening URL:", url); // Debug xem URL đúng không
+
+                    $("#imageDialogIframe").attr("src", url);
+                    $("#dialog").dialog("open");
+                } else {
+                    alert("Không tìm thấy ID sản phẩm!");
+                }
+            });
+        });
     </script>
 }

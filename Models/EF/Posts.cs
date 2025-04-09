@@ -2,7 +2,6 @@
 using System.ComponentModel.DataAnnotations;
 using Eshopp.Models.EF;
 using EShopp.Models;
-using System.Web.Mvc;
 
 namespace Eshopp.Models.EF
 {
@@ -20,7 +19,6 @@ namespace Eshopp.Models.EF
         public string ?Alias { get; set; }
 
         public string? Description { get; set; }
-        [AllowHtml]
         public string? Detail { get; set; }
         [StringLength(250)]
 
