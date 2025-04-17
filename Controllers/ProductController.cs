@@ -32,5 +32,6 @@ namespace EShopp.ViewComponents
 
             return View(items);  // Trả về danh sách sản phẩm
         }
+       
     }
 }

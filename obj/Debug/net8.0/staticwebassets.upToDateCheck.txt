@@ -3508,6 +3508,7 @@ wwwroot\images\news\fdb1902a-2422-42c6-8234-6a988dd7ae39.png
 wwwroot\images\products\08317daf-b4d4-4f9c-85bc-b144e8119d96.webp
 wwwroot\images\products\3956752e-4233-4685-93d9-e307741160af.png
 wwwroot\images\products\64e92fe1-ea66-4cb0-8012-96c103629eb2.png
+wwwroot\images\products\6d7d6d89-0a7d-4a72-841a-7fd2245fb473.webp
 wwwroot\images\products\7636b5f7-2940-49b3-b2b6-b0887a31b662.webp
 wwwroot\images\products\7d8da27c-6aed-4ef5-8160-c80885488d2a.jpg
 wwwroot\images\products\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg

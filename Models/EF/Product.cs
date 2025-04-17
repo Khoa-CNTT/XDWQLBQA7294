@@ -23,7 +23,7 @@ namespace EShopp.Models.EF
         public string ?Detail { get; set; }
         public string? Image { get; set; }
         [DisplayFormat(DataFormatString = "{0:N0}đ", ApplyFormatInEditMode = true)]
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
         [DisplayFormat(DataFormatString = "{0:N0}đ", ApplyFormatInEditMode = true)]
         public decimal? PriceSale { get; set; }
         public int? Quantiry { get; set; }

@@ -298,7 +298,6 @@ E:\Eshopp\Eshopp\obj\Debug\net8.0\refint\Eshopp.dll
 E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.pdb
 E:\Eshopp\Eshopp\obj\Debug\net8.0\Eshopp.genruntimeconfig.cache
 E:\Eshopp\Eshopp\obj\Debug\net8.0\ref\Eshopp.dll
-E:\Eshopp\Eshopp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.Mvc.dll
 E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.Razor.dll
 E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.Helpers.dll
@@ -306,3 +305,4 @@ E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
 E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 E:\Eshopp\Eshopp\bin\Debug\net8.0\System.Web.WebPages.dll
 E:\Eshopp\Eshopp\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+E:\Eshopp\Eshopp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<EShopp.Models.EF.Product>
-
 @if (Model != null && Model.Any())
 {
     <div class="product-container row">
@@ -8,7 +7,7 @@
         {
             var strImage = item.Image;
 
-            <div class="product-item col-lg-3 col-md-4 col-sm-6" data-category="@item.ProductCategory?.Alias">
+            <div class="product-item @item.ProductCategory?.Alias col-lg-3 col-md-4 col-sm-6">
                 <div class="product discount product_filter">
                     <div class="product_image">
                         <img src="@strImage" alt="@item.Title" class="img-fluid">
@@ -27,7 +26,7 @@
                         }
                         else
                         {
-                            <div class="product_price">@item.Price.ToString("N0") VNĐ</div>
+                            <div class="product_price">@item.Price?.ToString("N0") VNĐ</div>
                         }
                     </div>
                 </div>
