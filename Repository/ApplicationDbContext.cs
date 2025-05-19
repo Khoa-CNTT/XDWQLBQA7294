@@ -20,16 +20,24 @@ namespace EShopp.Repository
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Subcribe> Subcribes { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
-    
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>()
+
                 .HasOne(p => p.ProductCategory)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.ProductCategoryId)
-                .OnDelete(DeleteBehavior.SetNull); // Nếu xóa Category, Product giữ NULL
-
+                .OnDelete(DeleteBehavior.SetNull);
+            // Nếu xóa Category, Product giữ NULL
+            modelBuilder.Entity<Product>()
+                 .HasMany(p => p.ProductImages)
+                 .WithOne(pi => pi.Product)
+                 .HasForeignKey(pi => pi.ProductId)
+                 .OnDelete(DeleteBehavior.Cascade); // Xóa ảnh khi xóa sản phẩm
             base.OnModelCreating(modelBuilder);
         }
+
+
     }
 }

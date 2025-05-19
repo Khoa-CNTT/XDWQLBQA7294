@@ -75,11 +75,10 @@
                         <th>STT</th>
                         <th>Hình ảnh</th>
                         <th>Tên sản phẩm</th>
-                        <th>Danh mục</th>
-                        <th>Home</th>
+                        <th>Danh mục</th>                       
                         <th>Số lượng</th>
                         <th>Giá</th>
-                        <th> Ngày tạo</th>
+                        <th>Ngày tạo</th>
                      
 
 
@@ -97,6 +96,7 @@
                         {
                             var strCheck = item.IsActive ? "<i class = 'fa fa-check text-success'></i> " : "<i class = 'fa fa-times text-danger'></i>";
                             var strCheckHome = item.IsHome ? "<i class = 'fa fa-check text-success'></i> " : "<i class = 'fa fa-times text-danger'></i>";
+                            var strCheckSale = item.IsSale ? "<i class = 'fa fa-check text-success'></i> " : "<i class = 'fa fa-times text-danger'></i>";
 
                             <tr id="trow_@item.id">
                                 <td><input type="checkbox" class=" cbkItem" value="@item.id" /></td>
@@ -117,6 +117,10 @@
                                 <td class="text-center">
                                     <a href="#" data-id="@item.id" class="btnActive">@Html.Raw(strCheck)</a>
                                     <label class="m1-2">Home </label>
+                                </td>
+                                <td class="text-center">
+                                    <a href="#" data-id="@item.id" class="btnSale">@Html.Raw(strCheckSale)</a>
+                                    <label class="m1-2">Sale </label>
                                 </td>
                                 <td>
                                     <a href="/admin/Products/edit/@item.id" class="btn btn-sm btn-primary">Sửa</a>
@@ -247,6 +251,7 @@
                 });
             });
         });
+         
             $('body').on('click', '.btnHome', function (e) {
                 e.preventDefault();
                 var btn = $(this);
@@ -267,6 +272,27 @@
                     }
                 });
             });
+             $('body').on('click', '.btnSale', function (e) {
+                e.preventDefault();
+                var btn = $(this);
+                var id = btn.data("id");
+
+                $.ajax({
+                    url: '/admin/products/IsSale',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (rs) {
+                        if (rs.success) {
+                            if (rs.isSale) {
+                                btn.html("<i class='fa fa-check text-success'></i>");
+                            } else {
+                                btn.html("<i class='fas fa-times text-danger'></i>");
+                            }
+                        }
+                    }
+                });
+            });
+      
               $(document).ready(function () {
             $("#dialog").dialog({
                 autoOpen: false,

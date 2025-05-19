@@ -5,7 +5,8 @@
     <ul class="navbar_menu">
         @foreach (var item in Model)
         {
-            <li><a href="@item.Alias">@item.Title</a></li>
+            var link = item.Alias == "trang-chu" ? "/" : "/" + item.Alias;
+            <li><a href="@link">@item.Title</a></li>
         }
     </ul>
 }

@@ -140,6 +140,10 @@ namespace Eshopp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
@@ -155,6 +159,9 @@ namespace Eshopp.Migrations
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TypePayment")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -237,7 +244,7 @@ namespace Eshopp.Migrations
                     b.Property<string>("Modifiedby")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal?>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal?>("PriceSale")
@@ -344,9 +351,14 @@ namespace Eshopp.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProductImageid")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
 
                     b.HasIndex("ProductId");
+
+                    b.HasIndex("ProductImageid");
 
                     b.ToTable("tb_ProductImage");
                 });
@@ -603,6 +615,10 @@ namespace Eshopp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EShopp.Models.EF.ProductImage", null)
+                        .WithMany("ProductImages")
+                        .HasForeignKey("ProductImageid");
+
                     b.Navigation("Product");
                 });
 
@@ -641,6 +657,11 @@ namespace Eshopp.Migrations
             modelBuilder.Entity("EShopp.Models.EF.ProductCategory", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EShopp.Models.EF.ProductImage", b =>
+                {
+                    b.Navigation("ProductImages");
                 });
 
             modelBuilder.Entity("Eshopp.Models.EF.Category", b =>

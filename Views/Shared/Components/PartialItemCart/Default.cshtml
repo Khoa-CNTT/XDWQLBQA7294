@@ -1,0 +1,83 @@
+﻿@model Eshopp.Models.ShoppingCart
+
+<div class="col-md-12">
+    <!-- Hiển thị số lượng sản phẩm -->
+    <div id="checkout_items" class="checkout-items">
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr class="text-center">
+                <th>STT</th>
+                <th>Ảnh sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Danh mục</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th style="width:200px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Items != null && Model.Items.Any())
+            {
+                var i = 0;
+                var tongtien = Model.Items.Sum(x => x.TotalPrice);
+                foreach (var item in Model.Items)
+                {
+                    <tr id="trow@(item.ProductId)" class="text-center">
+                        <td>@(++i)</td>
+                        <td><img src="@item.ProductImage" width="60" /></td>
+                        <td>
+                            <a href="/san-pham/chi-tiet/@item.Alias-p@(item.ProductId)">
+                                @item.ProductName
+                            </a>
+                        </td>
+                        <td>@item.CategoryName</td>
+                        <td>@item.Price.ToString("N0") VNĐ</td>
+                        <td>
+                            <input type="number"
+                                   class="quantity-input"
+                                   data-id="@item.ProductId"
+                                   id="Quantity_@item.ProductId"
+                                   value="@item.Quantity"
+                                   min="1"
+                                   style="width: 60px;" />
+                        </td>
+                        <td class="total-price">@item.TotalPrice.ToString("N0") VNĐ</td>
+                        <td>
+                            <a href="#"
+                               data-id="@item.ProductId"
+                               class="btn btn-sm btn-danger btnDelete">
+                                Xóa
+                            </a>
+                            <a href="#"
+                               data-id="@item.ProductId"
+                               class="btn btn-sm btn-primary btnUpdate">
+                                Cập nhật
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+                <tr>
+                    <th colspan="6" class="text-right">Tổng :</th>
+                    <th id="total-price">@tongtien.ToString("N0") VNĐ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td colspan="8" class="text-right">
+                        <a href="#" class="btn btn-sm btn-danger btnDeleteAll">Xóa tất cả</a>
+                        <a href="/thanh-toan" class="btn btn-sm btn-success ">Thanh toán</a>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center">Giỏ hàng trống.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

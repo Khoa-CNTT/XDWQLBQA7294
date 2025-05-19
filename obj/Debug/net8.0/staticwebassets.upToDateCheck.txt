@@ -30,6 +30,7 @@ wwwroot\assets\js\categories_custom.js
 wwwroot\assets\js\contact_custom.js
 wwwroot\assets\js\custom.js
 wwwroot\assets\js\jquery-3.2.1.min.js
+wwwroot\assets\js\JsShopping.js
 wwwroot\assets\js\single_custom.js
 wwwroot\assets\plugins\easing\easing.js
 wwwroot\assets\plugins\font-awesome-4.7.0\css\font-awesome.css
@@ -136,6 +137,9 @@ wwwroot\autoNumeric-next\test\unit\karma.conf.js
 wwwroot\autoNumeric-next\test\unit\tests.webpack.js
 wwwroot\autoNumeric-next\tools\authors.sh
 wwwroot\autoNumeric-next\yarn.lock
+wwwroot\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp
+wwwroot\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp
+wwwroot\BALENCIAGA_Taped_logo_hoodie_black_model_500x.webp
 wwwroot\Content\ckeditor\adapters\jquery.js
 wwwroot\Content\ckeditor\build-config.js
 wwwroot\Content\ckeditor\CHANGES.md
@@ -3335,6 +3339,7 @@ wwwroot\Content\responsive_filemanager\source\source.txt
 wwwroot\Content\responsive_filemanager\thumbs\thumbs.txt
 wwwroot\Content\responsive_filemanager\tinymce\plugins\responsivefilemanager\img\insertfile.gif
 wwwroot\Content\responsive_filemanager\tinymce\plugins\responsivefilemanager\plugin.min.js
+wwwroot\Content\s.jpg
 wwwroot\Content\tinymce\CHANGELOG.md
 wwwroot\Content\tinymce\js\tinymce\icons\default\icons.min.js
 wwwroot\Content\tinymce\js\tinymce\langs\README.md
@@ -3506,12 +3511,16 @@ wwwroot\images\news\e96246c5-bf89-411c-adcf-3f671b5b29a6.webp
 wwwroot\images\news\eb792de2-c19c-46ab-9e06-8598f297a958.png
 wwwroot\images\news\fdb1902a-2422-42c6-8234-6a988dd7ae39.png
 wwwroot\images\products\08317daf-b4d4-4f9c-85bc-b144e8119d96.webp
+wwwroot\images\products\0b499d96-a287-4f4f-af87-b8ad778ae2b9.jpg
 wwwroot\images\products\3956752e-4233-4685-93d9-e307741160af.png
 wwwroot\images\products\64e92fe1-ea66-4cb0-8012-96c103629eb2.png
 wwwroot\images\products\6d7d6d89-0a7d-4a72-841a-7fd2245fb473.webp
 wwwroot\images\products\7636b5f7-2940-49b3-b2b6-b0887a31b662.webp
 wwwroot\images\products\7d8da27c-6aed-4ef5-8160-c80885488d2a.jpg
+wwwroot\images\products\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp
+wwwroot\images\products\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp
 wwwroot\images\products\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg
+wwwroot\images\products\ec42c5c2-bbd6-4755-a7ae-90b3f3e60b43.webp
 wwwroot\images\products\Untitled.png
 wwwroot\images\products\vn-11134207-7r98o-lwjivhd1edw99b.webp
 wwwroot\images\products\vn-11134207-7r98o-lwjivhdui9cr74.webp
@@ -3575,3 +3584,4 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\s.jpg

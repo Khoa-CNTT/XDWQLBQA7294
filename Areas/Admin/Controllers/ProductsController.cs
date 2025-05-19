@@ -185,7 +185,21 @@ namespace Eshopp.Areas.Admin.Controllers
             return Json(new { success = false });
 
         }
-    
+        [HttpPost]
+        public ActionResult IsSale(int id)
+        {
+            var item = _context.Products.Find(id);
+            if (item != null)
+            {
+                item.IsSale = !item.IsSale;
+                _context.Entry(item).State = EntityState.Modified;
+                _context.SaveChanges();
+                return Json(new { success = true, isSale = item.IsSale });
+            }
+            return Json(new { success = false });
+
+        }
+
         private List<SelectListItem> GetCategories()
         {
             return _context.ProductCategories

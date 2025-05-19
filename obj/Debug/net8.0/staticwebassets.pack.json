@@ -1,8 +1,16 @@
 {
   "Files": [
     {
-      "Id": "E:\\Eshopp\\Eshopp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Eshopp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Eshopp.wxrzc7eb3n.bundle.scp.css"
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp",
+      "PackagePath": "staticwebassets\\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp",
+      "PackagePath": "staticwebassets\\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\BALENCIAGA_Taped_logo_hoodie_black_model_500x.webp",
+      "PackagePath": "staticwebassets\\BALENCIAGA_Taped_logo_hoodie_black_model_500x.webp"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\Content\\Clients\\dist\\assets\\img\\AdminLTEFullLogo.png",
@@ -12801,6 +12809,10 @@
       "PackagePath": "staticwebassets\\Content\\responsive_filemanager\\tinymce\\plugins\\responsivefilemanager\\plugin.min.js"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\Content\\s.jpg",
+      "PackagePath": "staticwebassets\\Content\\s.jpg"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\Content\\tinymce\\CHANGELOG.md",
       "PackagePath": "staticwebassets\\Content\\tinymce\\CHANGELOG.md"
     },
@@ -13407,6 +13419,10 @@
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\images\\slider_1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\slider_1.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\JsShopping.js",
+      "PackagePath": "staticwebassets\\assets\\js\\JsShopping.js"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\assets\\js\\categories_custom.js",
@@ -14037,6 +14053,10 @@
       "PackagePath": "staticwebassets\\images\\products\\08317daf-b4d4-4f9c-85bc-b144e8119d96.webp"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\0b499d96-a287-4f4f-af87-b8ad778ae2b9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0b499d96-a287-4f4f-af87-b8ad778ae2b9.jpg"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\3956752e-4233-4685-93d9-e307741160af.png",
       "PackagePath": "staticwebassets\\images\\products\\3956752e-4233-4685-93d9-e307741160af.png"
     },
@@ -14057,12 +14077,24 @@
       "PackagePath": "staticwebassets\\images\\products\\7d8da27c-6aed-4ef5-8160-c80885488d2a.jpg"
     },
     {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp",
+      "PackagePath": "staticwebassets\\images\\products\\BALENCIAGA_Taped_logo_hoodie_black_1000x.webp"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp",
+      "PackagePath": "staticwebassets\\images\\products\\BALENCIAGA_Taped_logo_hoodie_black_back_500x.webp"
+    },
+    {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\Untitled.png",
       "PackagePath": "staticwebassets\\images\\products\\Untitled.png"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg",
       "PackagePath": "staticwebassets\\images\\products\\c8b17da4-c275-47aa-9bbe-16d983c519a0.jpg"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\ec42c5c2-bbd6-4755-a7ae-90b3f3e60b43.webp",
+      "PackagePath": "staticwebassets\\images\\products\\ec42c5c2-bbd6-4755-a7ae-90b3f3e60b43.webp"
     },
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\images\\products\\vn-11134207-7r98o-lwjivhd1edw99b.webp",
@@ -14311,6 +14343,10 @@
     {
       "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Eshopp\\Eshopp\\wwwroot\\s.jpg",
+      "PackagePath": "staticwebassets\\s.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Eshopp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -1,0 +1,45 @@
+﻿@model X.PagedList.IPagedList<EShopp.Models.EF.OrderDetail>
+@using X.PagedList.Mvc.Core
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var i = 0;
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@(item.Product?.Title ?? "N/A")</td>
+                    <td>@item.Price.ToString("N0") VNĐ</td>
+                    <td>@item.Quantity</td>
+                    <td>@((item.Price * item.Quantity).ToString("N0")) VNĐ</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("View", "Order", new { area = "Admin", id = ViewBag.OrderId, page }), new PagedListRenderOptions
+{
+    DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+    DisplayLinkToNextPage = PagedListDisplayMode.Always
+})
+    </div>
+}
+else
+{
+    <p>Không có sản phẩm nào trong đơn hàng này.</p>
+}

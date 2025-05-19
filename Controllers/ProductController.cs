@@ -1,37 +1,81 @@
 ﻿using EShopp.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace EShopp.ViewComponents
+[Route("san-pham")]
+public class ClientProductsController : Controller
 {
-    public class ProductViewComponent : ViewComponent
+    private readonly ApplicationDbContext _context;
+
+    public ClientProductsController(ApplicationDbContext context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
 
-        public ProductViewComponent(ApplicationDbContext context)
+    // GET: /san-pham
+    [HttpGet("")]
+    public async Task<IActionResult> Index()
+    {
+        var products = await _context.Products
+            .Include(p => p.ProductImages)
+            .Include(p => p.ProductCategory) // Load cả danh mục
+            .Where(p => p.IsActive)
+            .OrderByDescending(p => p.CreatedDate)
+            .AsNoTracking() // Tối ưu hiệu suất
+            .ToListAsync();
+
+        return View(products);
+    }
+
+    // GET: /san-pham/danh-muc/womens-1
+    [HttpGet("danh-muc/{alias}-{id}")]
+    public async Task<IActionResult> ProductCategory(string alias, int id)
+    {
+        // Kiểm tra danh mục tồn tại
+        var categoryExists = await _context.ProductCategories
+            .AnyAsync(c => c.Id == id && c.Alias == alias);
+        if (!categoryExists) return NotFound();
+
+        var products = await _context.Products
+            .Include(p => p.ProductImages)
+            .Where(p => p.ProductCategoryId == id && p.IsActive)
+            .AsNoTracking()
+            .ToListAsync();
+
+        ViewBag.CategoryName = await _context.ProductCategories
+            .Where(c => c.Id == id)
+            .Select(c => c.Title)
+            .FirstOrDefaultAsync();
+        var cate = _context.ProductCategories.Find(id);
+        if (cate != null)
         {
-            _context = context;
+            ViewBag.CateName=cate.Title;
+        }
+        ViewBag.CateId = id;
+        return View(products);
+    }
+    [HttpGet("chi-tiet/{alias}-p{id}")] // Thêm route đầy đủ
+
+    public async Task<IActionResult> Detail(string alias, int id)
+    {
+        var product = await _context.Products
+            .Include(p => p.ProductImages)  // Load ảnh sản phẩm
+            .Include(p => p.ProductCategory)  // Load danh mục
+            .AsNoTracking()  // Tối ưu hiệu suất
+            .FirstOrDefaultAsync(p => p.id == id);
+
+        if (product == null)
+        {
+            return NotFound();
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(int? cateid = null)
+        // Redirect nếu alias không khớp (quan trọng cho SEO)
+        if (!string.Equals(product.Alias, alias, StringComparison.OrdinalIgnoreCase))
         {
-            var query = _context.Products
-                .Include(p => p.ProductImages)  // Lấy danh sách ảnh sản phẩm
-                .AsQueryable(); // Đảm bảo kiểu dữ liệu là IQueryable trước khi lọc
-
-            if (cateid.HasValue)
-            {
-                query = query.Where(p => p.ProductCategoryId == cateid.Value);
-            }
-
-            var items = await query
-                .OrderByDescending(p => p.CreatedDate)  // Sắp xếp theo ngày tạo sau khi lọc
-                .ToListAsync(); // Lấy dữ liệu từ database
-
-            return View(items);  // Trả về danh sách sản phẩm
+            return RedirectToActionPermanent(nameof(Detail),
+                new { alias = product.Alias, id = product.id });
         }
-       
+
+        return View(product);
     }
 }

@@ -1,0 +1,46 @@
+﻿@model Eshopp.Models.ShoppingCart
+
+<div class="col-md-12">
+    <!-- Hiển thị số lượng sản phẩm -->
+    <div id="checkout_items" class="checkout-items">
+    </div>
+
+    @if (Model != null && Model.Items != null && Model.Items.Any())
+    {
+        <h3>Giỏ hàng <span style="float:right;">@Model.Items.Count()</span></h3>
+        var tongtien = Model.Items.Sum(x => x.TotalPrice);
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    
+                }
+            </tbody>
+        </table>
+
+        <!-- Hiển thị giá tiền của từng hàng và tổng tiền -->
+        <div class="cart-summary">
+            @foreach (var item in Model.Items)
+            {
+                <div class="row">
+                    <div class="col-md-8">@item.ProductName</div>
+                    <div class="col-md-4 text-right">@item.Price.ToString("N0") VNĐ</div>
+                </div>
+            }
+            <hr />
+            <div class="row">
+                <div class="col-md-8"><strong>Tổng tiền:</strong></div>
+                <div class="col-md-4 text-right"><strong>@tongtien.ToString("N0") VNĐ</strong></div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Giỏ hàng trống.</p>
+    }
+</div>

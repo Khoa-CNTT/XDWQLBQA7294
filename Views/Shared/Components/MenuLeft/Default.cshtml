@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EShopp.Models.EF.ProductCategory>
+
+@if (Model != null && Model.Any())
+
+{
+
+
+
+    <ul class="sidebar_categories">
+        @foreach (var item in Model)
+        {
+           
+                <li>
+                    <a asp-controller="ClientProducts"
+                       asp-action="ProductCategory"
+                       asp-route-alias="@item.Alias"
+                       asp-route-id="@item.Id">
+                        @item.Title
+                    </a>
+                </li>
+            
+        }
+    </ul>
+}

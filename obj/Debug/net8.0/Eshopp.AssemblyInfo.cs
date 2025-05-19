@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eshopp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e1fb07d018632d4cfa1cafc0cb26d82448501cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9fa8ae1da6550f5902bcaffa711204f94b3bf74")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eshopp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eshopp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -23,11 +23,12 @@ namespace EShopp.Models.EF
 
         public string Phone { get; set; }
         [Required]
-
+        public string Email { get; set; }
         public string Address { get; set; }
         public decimal TotalAmount { get; set; }
         public int Quantity { get; set; }
+        public int TypePayment {  get; set; }
 
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }
