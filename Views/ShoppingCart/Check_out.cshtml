@@ -27,7 +27,7 @@
             @if (Model != null && Model.Items != null && Model.Items.Any())
             {
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <form id="checkoutForm" method="post">
                             @Html.AntiForgeryToken()
 
@@ -58,13 +58,13 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-block btn-success">Đặt hàng</button>
                             </div>
-                            <div class="col-md-4">
-                                @await Component.InvokeAsync("PartialItemThanhToan")
-                            </div>
+                           
                         </form>
                         <div id="load-data"></div> <!-- Khu vực cập nhật kết quả -->
                     </div>
-                    
+                    <div class="col-md-4">
+                        @await Component.InvokeAsync("PartialItemThanhToan")
+                    </div>
                 </div>
             }
             else

@@ -4,6 +4,7 @@ using EShopp.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Globalization;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -15,11 +16,12 @@ namespace Eshopp.Controllers
     {
         private readonly IHttpContextAccessor _httpContextAccessor; // Khai báo biến
         private readonly ApplicationDbContext _context; // Thay bằng DbContext của bạn
-
-        public ShoppingCartController(IHttpContextAccessor httpContextAccessor, ApplicationDbContext context)
+        private readonly VnPaySettings _vnPaySettings;
+        public ShoppingCartController(IOptions<VnPaySettings> vnPaySettings,IHttpContextAccessor httpContextAccessor, ApplicationDbContext context)
         {
             _httpContextAccessor = httpContextAccessor; // Inject qua constructor
             _context = context;
+            _vnPaySettings = vnPaySettings.Value;
         }
         [HttpGet]
         public IActionResult Check_out()
